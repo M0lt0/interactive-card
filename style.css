@@ -92,7 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 460px;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 20px;
   color: var(--Very-dark-violet);
   font-size: x-small;
   justify-content: space-evenly;
@@ -116,6 +116,7 @@ body {
 .inputs {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .inputs {
   width: 330px;
@@ -143,6 +144,12 @@ body {
   color: white;
   border: none;
   margin-top: 20px;
+}
+.symbol {
+  margin-left: 12px;
+}
+.cvc {
+  margin-right: 120px;
 }
 /*<style>
     .attribution {
