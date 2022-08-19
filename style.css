@@ -1,6 +1,7 @@
 body {
   margin: 0;
   border: 0;
+  height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -14,142 +15,219 @@ body {
   --Dark-grayish-violet: hsl(279, 6%, 55%);
   --Very-dark-violet: hsl(278, 68%, 11%);
 }
-.interactive-header {
-  height: 210px;
-  background: url(./images/bg-main-mobile.png);
-}
-.interactive-header img {
-  width: 260px;
-}
-.back-img,
-.front-img {
-  position: relative;
-}
-.back-img h4 {
-  position: absolute;
-  top: 46px;
-  right: 30px;
-  text-align: right;
-  background: none;
-  color: var(--Light-grayish-violet);
-  font-size: 12px;
-}
-.front-img {
-  position: absolute;
-  left: 30px;
-  top: 111px;
-}
-.back-img {
-  position: absolute;
-  right: 20px;
-  top: 30px;
-}
-/*svg {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-}*/
-.logo-img {
-  position: absolute;
-  left: -80px;
-  top: -25px;
-  transform: scale(0.5);
-}
-.serial-num {
-  position: absolute;
-  top: 55px;
-  left: 10px;
-  width: 90%;
-  text-align: center;
-  letter-spacing: 2px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 16px;
-}
-.card-holder-name {
-  position: absolute;
-  top: 90px;
-  left: 10px;
-  width: 120px;
-  height: 20px;
-  color: white;
-  font-size: 12px;
-}
-.card-exp-date {
-  position: absolute;
-  top: 90px;
-  right: 10px;
-  width: 50px;
-  height: 20px;
-  color: white;
-  font-size: 12px;
-  color: white;
-  text-align: right;
-}
-.data-sec {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  height: 460px;
-  padding: 0px 0px 0px 20px;
-  color: var(--Very-dark-violet);
-  font-size: x-small;
-  justify-content: space-evenly;
-}
-.card-date {
-  width: 330px;
-  display: flex;
-  flex-direction: column;
-}
 
-.card-number input,
-.holder-name input,
-.card-date input {
-  height: 50px;
-  width: 330px;
-  border-radius: 8px;
-  border: 2px solid var(--Light-grayish-violet);
-  margin-top: -10px;
-}
-.year-month-text,
-.inputs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.inputs {
-  width: 330px;
-  justify-content: space-evenly;
-  gap: 10px;
-}
-::placeholder {
-  font-family: "space grotesk" sans-serif;
-  font-size: 18px;
-  padding-left: 10px;
-}
+@media (max-width: 400px) {
+  .interactive-header {
+    height: 210px;
+    background: url(./images/bg-main-mobile.png);
+  }
+  .interactive-header img {
+    width: 260px;
+  }
+  .back-img,
+  .front-img {
+    position: relative;
+  }
+  .back-img h4 {
+    position: absolute;
+    top: 46px;
+    right: 30px;
+    text-align: right;
+    background: none;
+    color: var(--Light-grayish-violet);
+    font-size: 12px;
+  }
+  .front-img {
+    position: absolute;
+    left: 30px;
+    top: 111px;
+  }
+  .back-img {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  /*svg {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }*/
+  .logo-img {
+    position: absolute;
+    left: -80px;
+    top: -25px;
+    transform: scale(0.5);
+  }
+  .serial-num {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: 2px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+  .card-holder-name {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    width: 120px;
+    height: 20px;
+    color: white;
+    font-size: 12px;
+  }
+  .card-exp-date {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    width: 50px;
+    height: 20px;
+    color: white;
+    font-size: 12px;
+    color: white;
+    text-align: right;
+  }
+  .data-sec {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    padding: 0px 0px 0px 20px;
+    color: var(--Very-dark-violet);
+    font-size: x-small;
+    justify-content: space-evenly;
+  }
+  .card-date {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+  }
 
-#ex-month,
-#ex-year {
-  width: 75px;
+  .card-number input,
+  .holder-name input,
+  .card-date input {
+    height: 50px;
+    width: 330px;
+    border-radius: 8px;
+    border: 2px solid var(--Light-grayish-violet);
+    margin-top: -10px;
+  }
+  .year-month-text,
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .inputs {
+    width: 330px;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  ::placeholder {
+    font-family: "space grotesk" sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  #ex-month,
+  #ex-year {
+    width: 75px;
+  }
+  #cvc {
+    width: 160px;
+  }
+  .confirm {
+    height: 55px;
+    width: 330px;
+    border-radius: 8px;
+    background: var(--Very-dark-violet);
+    color: white;
+    border: none;
+    margin-top: 20px;
+  }
+  .symbol {
+    margin-left: 12px;
+  }
+  .cvc {
+    margin-right: 120px;
+  }
 }
-#cvc {
-  width: 160px;
-}
-.confirm {
-  height: 55px;
-  width: 330px;
-  border-radius: 8px;
-  background: var(--Very-dark-violet);
-  color: white;
-  border: none;
-  margin-top: 20px;
-}
-.symbol {
-  margin-left: 12px;
-}
-.cvc {
-  margin-right: 120px;
+@media (min-width: 400px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  .interactive-header {
+    height: 100%;
+    width: 34%;
+    background-image: url(./images/bg-main-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .data-sec {
+    width: 66%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-number input,
+  .holder-name input,
+  .card-date input {
+    height: 50px;
+    width: 400px;
+    border-radius: 8px;
+    border: 2px solid var(--Light-grayish-violet);
+    margin-top: -10px;
+  }
+  ::placeholder {
+    font-family: "space grotesk" sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .confirm {
+    height: 55px;
+    width: 400px;
+    border-radius: 8px;
+    background: var(--Very-dark-violet);
+    color: white;
+    border: none;
+    margin-top: 20px;
+  }
+  .year-month-text,
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-date {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputs {
+    width: 400px;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  #ex-month,
+  #ex-year {
+    width: 95px;
+  }
+  #cvc {
+    width: 160px;
+  }
+  .back-img {
+    position: relative;
+  }
+  .front-img {
+    position: relative;
+    top: 185px;
+  }
 }
 /*<style>
     .attribution {
