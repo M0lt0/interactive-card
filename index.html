@@ -5,11 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Interactive card details form</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,39 +31,41 @@
     </div>
   </main>
   <section class="data-sec">
-    <div class="holder-name">
-      <h3>cardholder Name</h3>
-      <input type="text" placeholder="e.g.Jane Appleseed" id="name">
-    </div>
-    <div class="card-number">
-      <h3>card Number</h3>
-      <input type="text" placeholder="e.g.1234 5678 9123 0000" id="number">
-    </div>
-    <div class="card-date">
-      <div class="year-month-text">
-        <h3>exp.date <span class="symbol">(mm/yy)</span></h3>
-        <h3 class="cvc">cvc</h3>
+    <form action="/" id="form">
+      <div class="holder-name">
+        <h3>cardholder Name</h3>
+        <input type="text" placeholder="e.g.Jane Appleseed" id="name">
       </div>
-      <div class="inputs">
-        <input type="text" placeholder="MM" id="ex-month">
-        <input type="text" placeholder="YY" id="ex-year">
-        <input type="text" placeholder="e.g.123" id="cvc">
+      <div class="card-number">
+        <h3>card Number</h3>
+        <input type="text" placeholder="e.g.1234 5678 9123 0000" id="number">
       </div>
-    </div>
-    <button class="confirm">Confirm</button>
+      <div class="card-date">
+        <div class="year-month-text">
+          <h3>exp.date <span class="symbol">(mm/yy)</span></h3>
+          <h3 class="cvc">cvc</h3>
+        </div>
+        <div class="inputs">
+          <input type="text" placeholder="MM" id="ex-month">
+          <input type="text" placeholder="YY" id="ex-year">
+          <input type="text" placeholder="e.g.123" id="cvc">
+        </div>
+      </div>
+      <button class="confirm" type="submit">Confirm</button>
+    </form>
   </section>
-
-  <!--
-  Thank you!
-  We've added your card details
-  Continue
-
-
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  Coded by <a href="#">Your Name Here</a>.
-  </div>
-</div>
--->
+  <section class="submitted">
+    <div class="submitted-details">
+      <img src="./images/icon-complete.svg" alt="">
+      <h3>Thank you!</h3>
+      <h4>We've added your card details</h4>
+      <button class="confirm">Continue</button>
+    </div>
+    <div>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </section>
 </body>
 
 </html>

@@ -25,7 +25,8 @@ body {
 .confirm {
   cursor: pointer;
 }
-@media (max-width: 400px) {
+
+@media (min-width: 375px) {
   .interactive-header {
     height: 210px;
     background: url(./images/bg-main-mobile.png);
@@ -56,11 +57,7 @@ body {
     right: 20px;
     top: 30px;
   }
-  /*svg {
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
-  }*/
+
   .logo-img {
     position: absolute;
     left: -80px;
@@ -100,7 +97,7 @@ body {
     text-align: right;
   }
   .data-sec {
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     height: 460px;
@@ -158,14 +155,36 @@ body {
   .cvc {
     margin-right: 120px;
   }
+  .submitted-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 460px;
+    margin-top: 100px;
+  }
+  .submitted h4 {
+    font-size: 18px;
+    color: var(--Dark-grayish-violet);
+    text-transform: none;
+  }
+  .confirm {
+    width: 90%;
+    height: 50px;
+  }
 }
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   body {
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: hidden;
   }
   .interactive-header {
-    height: 100%;
+    height: 100vh;
     width: 34%;
     background-image: url(./images/bg-main-mobile.png);
     background-size: cover;
@@ -179,6 +198,7 @@ body {
     flex-direction: column;
     padding-left: 100px;
     margin-left: 100px;
+    height: 100vh;
   }
   .card-number input,
   .holder-name input,
@@ -236,8 +256,8 @@ body {
   }
   .back-img h4 {
     position: absolute;
-    top: 85px;
-    right: 30px;
+    top: 35px;
+    right: 16px;
     text-align: right;
     background: none;
     color: var(--Light-grayish-violet);
@@ -246,26 +266,27 @@ body {
   }
   .logo-img {
     position: absolute;
-    left: 15px;
-    top: 40px;
-    transform: scale(1.5);
+    left: -80px;
+    top: -20px;
+    transform: scale(0.4);
   }
   .serial-num {
     position: absolute;
-    top: 100px;
+    display: flex;
+    top: 60px;
     left: 20px;
     width: 90%;
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     background: none;
     border: none;
     color: white;
-    font-size: 25px;
+    font-size: 16px;
   }
   .card-holder-name {
     position: absolute;
-    top: 180px;
-    left: 30px;
+    top: 100px;
+    left: 20px;
     width: 120px;
     height: 20px;
     color: white;
@@ -273,7 +294,7 @@ body {
   }
   .card-exp-date {
     position: absolute;
-    top: 180px;
+    top: 100px;
     right: 10px;
     width: 50px;
     height: 20px;
@@ -286,15 +307,42 @@ body {
     margin-right: 120px;
   }
 }
-@media (min-width: 700px) {
+@media (max-width: 700px) {
+  .submitted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    width: 60%;
+  }
+  .submitted h4 {
+    font-size: 18px;
+    color: var(--Dark-grayish-violet);
+    text-transform: none;
+  }
 }
-/*<style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@keyframes shakeme {
+  0% {
+    margin-left: 0px;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+  /*animation: shakeme 0.5s ease-in-out 0s 2;*/
+}
