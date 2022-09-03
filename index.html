@@ -18,54 +18,59 @@
 
 <body>
   <main class="interactive-header">
-    <div class="back-img">
-      <img src="images/bg-card-back.png" alt="">
-      <h4 class="pin">000</h4>
-    </div>
     <div class="front-img">
-      <img src="images/bg-card-front.png">
       <img src="./images/card-logo.svg" class="logo-img">
-      <h3 class="serial-num">0000 0000 0000 0000</h3>
+      <h3 class="serial-num ">0000 0000 0000 0000</h3>
       <h3 class="card-holder-name">jan appleseed</h3>
       <h3 class="card-exp-date">00/00</h3>
+    </div>
+    <div class="back-img">
+      <h4 class="pin">000</h4>
     </div>
   </main>
   <section class="data-sec">
     <form action="/" id="form">
-      <div class="holder-name">
-        <h3>cardholder Name</h3>
+      <div class="holder-name ">
+        <label>cardholder Name</label>
         <input type="text" placeholder="e.g.Jane Appleseed" id="name">
+        <div class="error1" style="display: none;"></div>
       </div>
       <div class="card-number">
-        <h3>card Number</h3>
+        <label>card Number</label>
         <input type="text" placeholder="e.g.1234 5678 9123 0000" id="number">
+        <div class="error2" style="display: none;"></div>
       </div>
       <div class="card-date">
         <div class="year-month-text">
-          <h3>exp.date <span class="symbol">(mm/yy)</span></h3>
-          <h3 class="cvc">cvc</h3>
+          <label>exp.date <span class="symbol">(mm/yy)</span><span>cvc</span></label>
         </div>
         <div class="inputs">
           <input type="text" placeholder="MM" id="ex-month">
           <input type="text" placeholder="YY" id="ex-year">
           <input type="text" placeholder="e.g.123" id="cvc">
         </div>
+        <div class="error3" style="display: none;"></div>
       </div>
       <button class="confirm" type="submit">Confirm</button>
     </form>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </section>
-  <section class="submitted">
+  <section class="submitted" style="display:none ;">
     <div class="submitted-details">
       <img src="./images/icon-complete.svg" alt="">
       <h3>Thank you!</h3>
       <h4>We've added your card details</h4>
       <button class="confirm">Continue</button>
     </div>
-    <div>
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </section>
+
 </body>
 
 </html>
